@@ -16,5 +16,22 @@ namespace PartyPlanner
         {
             InitializeComponent();
         }
+
+        private void numPeople_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fancyBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void healthyBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
