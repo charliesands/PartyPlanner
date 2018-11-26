@@ -43,6 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tooLongLabel = new System.Windows.Forms.Label();
             this.cakeWriting = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.birthdayCost = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -78,6 +80,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.birthdayCost);
+            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.cakeWriting);
             this.tabPage2.Controls.Add(this.tooLongLabel);
             this.tabPage2.Controls.Add(this.label4);
@@ -191,6 +195,7 @@
             0,
             0,
             0});
+            this.numberBirthday.ValueChanged += new System.EventHandler(this.numberBirthday_ValueChanged);
             // 
             // fancyBirthday
             // 
@@ -201,6 +206,7 @@
             this.fancyBirthday.TabIndex = 2;
             this.fancyBirthday.Text = "Fancy Decorations";
             this.fancyBirthday.UseVisualStyleBackColor = true;
+            this.fancyBirthday.CheckedChanged += new System.EventHandler(this.fancyBirthday_CheckedChanged);
             // 
             // label4
             // 
@@ -228,6 +234,23 @@
             this.cakeWriting.Size = new System.Drawing.Size(138, 20);
             this.cakeWriting.TabIndex = 5;
             this.cakeWriting.Text = "Happy Birthday!";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(18, 119);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 17);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Cost";
+            // 
+            // birthdayCost
+            // 
+            this.birthdayCost.Location = new System.Drawing.Point(65, 119);
+            this.birthdayCost.Name = "birthdayCost";
+            this.birthdayCost.Size = new System.Drawing.Size(65, 20);
+            this.birthdayCost.TabIndex = 7;
             // 
             // Form1
             // 
@@ -267,6 +290,8 @@
         private System.Windows.Forms.CheckBox fancyBirthday;
         private System.Windows.Forms.NumericUpDown numberBirthday;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox birthdayCost;
+        private System.Windows.Forms.Label label5;
     }
 }
 
