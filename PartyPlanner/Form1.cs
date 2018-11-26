@@ -25,7 +25,9 @@ namespace PartyPlanner
 
         private void DisplayBirthdayPartyCost()
         {
-            throw new NotImplementedException();
+            tooLongLabel.Visible = birthdayParty.CakeWritingTooLong;
+            decimal cost = birthdayParty.Cost;
+            birthdayCost.Text = cost.ToString("c");
         }
 
         private void DisplayDinnerPartyCost()
@@ -61,6 +63,12 @@ namespace PartyPlanner
         private void fancyBirthday_CheckedChanged(object sender, EventArgs e)
         {
             birthdayParty.FancyDecorations = fancyBirthday.Checked;
+            DisplayBirthdayPartyCost();
+        }
+
+        private void cakeWriting_TextChanged(object sender, EventArgs e)
+        {
+            birthdayParty.CakeWriting = cakeWriting.Text;
             DisplayBirthdayPartyCost();
         }
 
